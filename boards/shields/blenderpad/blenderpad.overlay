@@ -45,4 +45,10 @@
         display-name = "Default Layout";
         transform = <&default_transform>;
     };
+
+    led_indicator: led_indicator {
+        compatible = "zmk,led-indicator";
+        gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+        indicate-layer = <1>;
+    };
 };
