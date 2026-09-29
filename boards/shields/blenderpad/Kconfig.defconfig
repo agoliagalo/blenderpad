@@ -1,0 +1,6 @@
+if SHIELD_BLENDERPAD
+
+config ZMK_KEYBOARD_NAME
+    default "Blenderpad"
+
+endif

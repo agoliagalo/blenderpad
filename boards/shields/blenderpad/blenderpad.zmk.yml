@@ -1,0 +1,8 @@
+file_format: "1"
+id: blenderpad
+name: Blenderpad
+type: shield
+url: https://github.com/agoliagalo/zmk-config-tubulartest
+requires: [pro_micro]
+features:
+  - keys

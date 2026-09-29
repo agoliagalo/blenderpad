@@ -1,0 +1,26 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        blender_layer {
+            bindings = <
+                &kp SEMI &kp B &kp Q &kp D
+                &kp X &kp Y &kp W &kp G
+                &kp S &kp E &kp I &kp R
+                &kp LALT &tog 1 &kp N &kp LSHFT &kp LCTRL &kp TAB
+            >;
+        };
+
+        numpad_layer {
+            bindings = <
+                &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_N4
+                &kp KP_N5 &kp KP_N6 &kp KP_N7 &kp KP_N8
+                &kp KP_N9 &kp KP_N0 &kp KP_DOT &kp RET
+                &kp LALT &trans &bootloader &kp LSHFT &kp LCTRL &kp TAB
+            >;
+        };
+    };
+};
